@@ -61,32 +61,33 @@
             <label><input type="checkbox" value="DASK"> DASK</label>
         </div>
 
-  <form id="teklifForm">
+        <form id="teklifForm">
 
-    <!-- Bireysel için TC Kimlik -->
-    <div id="bireyselAlanlar">
-        <input type="text" id="tc" placeholder="T.C. Kimlik Numarası *">
-        <input type="date" id="dogum" placeholder="Doğum Tarihi *">
+            <!-- Bireysel için TC Kimlik -->
+            <div id="bireyselAlanlar">
+                <input type="text" id="tc" placeholder="T.C. Kimlik Numarası *">
+                <input type="date" id="dogum" placeholder="Doğum Tarihi *">
+            </div>
+
+            <!-- Kurumsal için Vergi No -->
+            <div id="kurumsalAlanlar" style="display: none;">
+                <input type="text" id="vergi" placeholder="Vergi Numarası *">
+            </div>
+
+            <div class="form-group">
+                <input type="tel" id="telefon" placeholder="Cep Telefonu *" required>
+                <input type="email" id="email" placeholder="E-posta adresi">
+            </div>
+
+            <div class="checkboxes">
+                <label><input type="checkbox" id="kvkk" required> KVKK Aydınlatma Metnini okudum</label><br>
+                <label><input type="checkbox" id="sozlesme" required> Kullanıcı Sözleşmesini okudum</label>
+            </div>
+
+            <button type="submit" class="submit-btn">DEVAM ET</button>
+        </form>
+
     </div>
-
-    <!-- Kurumsal için Vergi No -->
-    <div id="kurumsalAlanlar" style="display: none;">
-        <input type="text" id="vergi" placeholder="Vergi Numarası *">
-    </div>
-
-    <div class="form-group">
-        <input type="tel" id="telefon" placeholder="Cep Telefonu *" required>
-        <input type="email" id="email" placeholder="E-posta adresi">
-    </div>
-
-    <div class="checkboxes">
-        <label><input type="checkbox" id="kvkk" required> KVKK Aydınlatma Metnini okudum</label><br>
-        <label><input type="checkbox" id="sozlesme" required> Kullanıcı Sözleşmesini okudum</label>
-    </div>
-
-    <button type="submit" class="submit-btn">DEVAM ET</button>
-</form>
-
 
 </section>
 
