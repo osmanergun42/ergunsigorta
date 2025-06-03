@@ -366,6 +366,68 @@ footer {
     text-decoration: none;
     font-weight: bold;
 }
+@media (max-width: 992px) {
+    .modern-navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .menu {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .menu li a {
+        padding: 10px 14px;
+        font-size: 16px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-image img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .left-content {
+        text-align: center;
+    }
+    .car-image img {
+        max-width: 300px;
+    }
+    .right-form {
+        padding: 30px 20px;
+    }
+    .product-card {
+        width: 90%;
+    }
+    .company-logos {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 60px;
+    }
+    .page-title h1 {
+        font-size: 28px;
+    }
+    .left-content h2 {
+        font-size: 28px;
+    }
+    .company-card img {
+        width: 80px;
+    }
+    .contact-info h1 {
+        font-size: 28px;
+    }
+}
 
 .contact-info a:hover {
     text-decoration: underline;
