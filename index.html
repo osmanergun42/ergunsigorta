@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ergün Sigorta - Anasayfa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="modern-navbar">
+    <div class="logo">
+        <img src="logo.png" alt="Ergün Sigorta Logosu">
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="urunler.html">Ürünler</a></li>
+            <li><a href="police.html">Poliçe İşlemleri</a></li>
+            <li><a href="şirketler.html">Şirketler</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Ana İçerik -->
+<section class="main-section">
+
+    <!-- Sol Tanıtım ve Araç Görseli -->
+    <div class="left-content">
+        <h2>Trafik Sigortası Teklifi Al</h2>
+        <ul>
+            <li>✔ Anında trafik sigortası tekliflerini karşılaştır</li>
+            <li>✔ Teklifler arasından uygun olanı seç</li>
+            <li>✔ Acil durumlarda ücretsiz çekici ve yol yardım hizmetlerinden yararlan</li>
+        </ul>
+
+        <div class="car-image">
+            <img src="araba.png" alt="Araç Görseli">
+        </div>
+    </div>
+
+    <!-- Sağdaki Form -->
+    <div class="right-form">
+        <p>Avantajlı teklifleri alabilmek için bilgilerinizi girin:</p>
+
+        <!-- Kurumsal - Bireysel Seçimi -->
+        <div class="buttons">
+            <button class="active" id="bireyselBtn">Bireysel</button>
+            <button id="kurumsalBtn">Kurumsal</button>
+        </div>
+
+        <!-- Sigorta Türleri (Çoklu Seçim) -->
+        <div class="sigorta-turleri">
+            <label><input type="checkbox" value="Trafik"> Trafik</label>
+            <label><input type="checkbox" value="Kasko"> Kasko</label>
+            <label><input type="checkbox" value="Sağlık"> Sağlık</label>
+            <label><input type="checkbox" value="IMM"> IMM</label>
+            <label><input type="checkbox" value="DASK"> DASK</label>
+        </div>
+
+  <form id="teklifForm">
+
+    <!-- Bireysel için TC Kimlik -->
+    <div id="bireyselAlanlar">
+        <input type="text" id="tc" placeholder="T.C. Kimlik Numarası *">
+        <input type="date" id="dogum" placeholder="Doğum Tarihi *">
+    </div>
+
+    <!-- Kurumsal için Vergi No -->
+    <div id="kurumsalAlanlar" style="display: none;">
+        <input type="text" id="vergi" placeholder="Vergi Numarası *">
+    </div>
+
+    <div class="form-group">
+        <input type="tel" id="telefon" placeholder="Cep Telefonu *" required>
+        <input type="email" id="email" placeholder="E-posta adresi">
+    </div>
+
+    <div class="checkboxes">
+        <label><input type="checkbox" id="kvkk" required> KVKK Aydınlatma Metnini okudum</label><br>
+        <label><input type="checkbox" id="sozlesme" required> Kullanıcı Sözleşmesini okudum</label>
+    </div>
+
+    <button type="submit" class="submit-btn">DEVAM ET</button>
+</form>
+
+
+</section>
+
+<footer>
+    © 2025 Ergün Sigorta | Tüm Hakları Saklıdır.
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

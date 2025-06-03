@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ergün Sigorta - Teklif Al</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+<header class="modern-navbar">
+    <div class="logo">
+        <img src="logo.png" alt="Ergün Sigorta Logosu">
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="urunler.html">Ürünler</a></li>
+            <li><a href="police.html">Poliçe İşlemleri</a></li>
+            <li><a href="şirketler.html">Şirketler</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="teklif-page">
+
+    <div class="teklif-title">
+        <h1>Sigorta Teklifi Alın</h1>
+        <p>Bilgilerinizi girin, teklif oluşturulsun.</p>
+    </div>
+
+    <!-- 1. Adım Formu -->
+    <div class="teklif-form-container" id="form1">
+        <form id="formAdim1">
+            <input type="text" id="tc" placeholder="T.C. Kimlik Numarası *" required>
+            <input type="date" id="dogum" placeholder="Doğum Tarihi *" required>
+            <input type="tel" id="telefon" placeholder="Cep Telefonu *" required>
+            <input type="email" id="email" placeholder="E-posta Adresi">
+            <div class="checkboxes">
+                <label><input type="checkbox" id="kvkk" required> KVKK Aydınlatma Metnini okudum</label>
+                <label><input type="checkbox" id="sozlesme" required> Kullanıcı Sözleşmesini okudum</label>
+            </div>
+            <button type="submit">Devam Et</button>
+        </form>
+    </div>
+
+    <!-- 2. Adım Formu -->
+    <div class="teklif-form-container" id="form2" style="display:none;">
+        <form id="formAdim2">
+            <input type="text" id="plaka" placeholder="Araç Plakası *" required>
+            <input type="text" id="seri" placeholder="Ruhsat Seri No *" required>
+            <button type="submit">Teklifi Gönder</button>
+        </form>
+    </div>
+
+</section>
+
+<footer>
+    © 2025 Ergün Sigorta | Tüm Hakları Saklıdır.
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
